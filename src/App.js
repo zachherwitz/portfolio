@@ -2,20 +2,20 @@ import React from 'react';
 
 // IMAGES //
 
-import Distro from './images/distro.png';
-import Distro2 from './images/distro2.png';
+import Distro from './images/distro.jpg';
+import Distro2 from './images/distro2.jpg';
 
-import DistroEJS from './images/distro-ejs.png';
-import DistroEJS2 from './images/distro-ejs2.png';
+import DistroEJS from './images/distro-ejs.jpg';
+import DistroEJS2 from './images/distro-ejs2.jpg';
 
-import HAOly from './images/haoly.png';
-import HAOly2 from './images/haoly2.png';
+import HAOly from './images/haoly.jpg';
+import HAOly2 from './images/haoly2.jpg';
 
-import RootStock from './images/rootstock.png';
-import RootStock2 from './images/rootstock2.png';
+import RootStock from './images/rootstock.jpg';
+import RootStock2 from './images/rootstock2.jpg';
 
-import SATGen from './images/sat-gen.png';
-import SATGen2 from './images/sat-gen2.png';
+import SATGen from './images/sat-gen.jpg';
+import SATGen2 from './images/sat-gen2.jpg';
 
 import Zach from './images/zach.jpg';
 
