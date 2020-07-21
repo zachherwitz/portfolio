@@ -1,0 +1,37 @@
+html, body, #root, .app-container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  box-sizing: border-box;
+  border: 10px solid gold;
+}
+
+.display-container {
+  // box-sizing: border-box;
+  width: 70%;
+  height: 70vw;
+  margin: 2rem auto;
+  // border: 10px solid red;
+}
+
+.display-container img {
+  width: 100%;
+  border: 1px solid black;
+  // height: 100%;
+}
+
+.project-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-button-container button {
+  width: 40%;
+  height: 10vw;
+  margin: .5rem;
+}
