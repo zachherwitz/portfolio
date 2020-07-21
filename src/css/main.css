@@ -5,6 +5,10 @@ html, body, #root, .app-container {
   margin: 0;
 }
 
+* {
+  font-family: "Raleway";
+}
+
 nav {
   height: 5%;
 }
@@ -25,7 +29,6 @@ nav {
 .splash-text-left p {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
   font-size: 20vw;
 }
 
@@ -34,6 +37,12 @@ nav {
   width: 80%;
   margin: 1rem auto;
   background-color: green;
+}
+
+.splash-text-right p {
+  margin: 0;
+  padding: 0;
+  font-size: 20vw;
 }
 
 @media screen and (min-width: 900px) {
@@ -52,15 +61,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border: 2px solid black;
+    color: white;
+    background-color: #5300C6;
   }
 
   .splash-text-left p {
     margin: 0;
     padding: 0;
-    border: 2px solid red;
     font-size: 20vw;
+    font-weight: 300;
   }
 
   .left-container img {
@@ -73,7 +82,19 @@ nav {
     box-sizing: border-box;
     width: 50%;
     margin: 0;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: teal;
+  }
+
+  .splash-text-right p {
+    margin: 0;
+    padding: 0;
+    font-size: 20vw;
+    font-weight: 300;
   }
 }
 
