@@ -5,32 +5,76 @@ html, body, #root, .app-container {
   margin: 0;
 }
 
-.app-container {
-  box-sizing: border-box;
-  border: 10px solid gold;
+nav {
+  height: 5%;
 }
 
-.display-container {
-  width: 70%;
-  height: 70vw;
-  margin: 2rem auto;
-}
-
-.display-container img {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.project-button-container {
+.content-container {
+  height: 95%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
-.project-button-container button {
-  width: 40%;
-  height: 10vw;
-  margin: 0.5rem;
+.left-container {
+  height: 40%;
+  width: 80%;
+  margin: 1rem auto;
+  background-color: thistle;
+}
+
+.splash-text-left p {
+  margin: 0;
+  padding: 0;
+  border: 2px solid red;
+  font-size: 20vw;
+}
+
+.right-container {
+  height: 40%;
+  width: 80%;
+  margin: 1rem auto;
+  background-color: green;
+}
+
+@media screen and (min-width: 900px) {
+  .content-container {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-container {
+    height: 100%;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+  }
+
+  .splash-text-left p {
+    margin: 0;
+    padding: 0;
+    border: 2px solid red;
+    font-size: 20vw;
+  }
+
+  .left-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .right-container {
+    height: 100%;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    background-color: white;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
