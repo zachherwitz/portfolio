@@ -183,7 +183,7 @@ class App extends React.Component {
               name="Hao.ly"
               technologies="JavaScript / jQuery"
               projectLink="https://zachherwitz.github.io/chineseapp/"
-              projectInfo="A campy and user-friendly contact management app."/> : null}
+              projectInfo="A simple and meditative Chiense dictionary with built-in flashcards"/> : null}
 
         </div>
       </div>
