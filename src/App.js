@@ -15,7 +15,9 @@ import ProjectDescription from './components/ProjectDescription'
 class App extends React.Component {
   state = {
     display: 'splash',
-    showResume: false
+    showResume: false,
+    leftColor: '#4894B0',
+    rightColor: '#446E92'
   }
 
   displayRoute = (e) => {
@@ -46,51 +48,54 @@ class App extends React.Component {
       <nav>
         <div className="nav-name">
           <h1>zach herwitz</h1>
+          <h2>herwitz</h2>
         </div>
         <div className="nav-projects">
+          <p>projects</p>
+          <div className="nav-button-container">
+            <button
+              onClick={this.displayRoute}
+              displayroute="distro"
+              leftcolor="#332f2f"
+              rightcolor="#E5B455">distro</button>
+            <button
+              onClick={this.displayRoute}
+              displayroute="rootstock"
+              leftcolor="#CAA742"
+              rightcolor="#6CA39C">rootstock</button>
+            <button
+              onClick={this.displayRoute}
+              displayroute="haoly"
+              leftcolor="#CEAE56"
+              rightcolor="#596937">haoly</button>
+            <button
+              onClick={this.displayRoute}
+              displayroute="sat-gen"
+              leftcolor="#CE8956"
+              rightcolor="#2F8EB1">satgen</button>
+            <button
+              onClick={this.displayRoute}
+              displayroute="distro-ejs"
+              leftcolor="#261C0D"
+              rightcolor="#859152">distro-ejs</button>
+          </div>
+        </div>
+        <div className="nav-personals">
           <button
             onClick={this.displayRoute}
             displayroute="zach"
-            leftcolor=""
-            rightcolor="">zach</button>
-          <button
-            onClick={this.displayRoute}
-            displayroute="distro"
-            leftcolor=""
-            rightcolor="">distro</button>
-          <button
-            onClick={this.displayRoute}
-            displayroute="rootstock"
-            leftcolor=""
-            rightcolor="">rootstock</button>
-          <button
-            onClick={this.displayRoute}
-            displayroute="haoly"
-            leftcolor=""
-            rightcolor="">haoly</button>
-          <button
-            onClick={this.displayRoute}
-            displayroute="sat-gen"
-            leftcolor=""
-            rightcolor="">satgen</button>
-          <button
-            onClick={this.displayRoute}
-            displayroute="distro-ejs"
-            leftcolor=""
-            rightcolor="">distro-ejs</button>
+            leftcolor="#BB8378"
+            rightcolor="#59A4C0">about me</button>
+          <a target="_blank" href="https://github.com/zachherwitz/"><i className="fab fa-github-square"></i></a>
+          <a target="_blank" href="https://www.imdb.com/name/nm5178378/"><i className="fab fa-imdb"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/zach-herwitz/"><i className="fab fa-linkedin"></i></a>
         </div>
-        <div className="nav-socials">
-          <p>github</p>
-          <p>linkedin</p>
-          <p>medium</p>
-          <p>vettery</p>
-        </div>
-
       </nav>
 
 
       <div className="content-container">
-        <div className="left-container">
+
+        <div style={{background:this.state.leftColor}} className="left-container">
           {this.state.display === 'splash' ? <div className="splash-text-left">
             <p>za</p>
           </div> : null}
@@ -126,7 +131,7 @@ class App extends React.Component {
             </a> : null}
         </div>
 
-        <div className="right-container">
+        <div style={{background:this.state.rightColor}} className="right-container">
           {this.state.display === 'splash' ? <div className="splash-text-right">
             <p>ch</p>
           </div> : null}
@@ -182,6 +187,38 @@ class App extends React.Component {
 
         </div>
       </div>
+      <footer>
+        <button
+          onClick={this.displayRoute}
+          displayroute="distro"
+          leftcolor="#332f2f"
+          rightcolor="#E5B455">distro</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="rootstock"
+          leftcolor="#CAA742"
+          rightcolor="#6CA39C">rootstock</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="zach"
+          leftcolor="#BB8378"
+          rightcolor="#4894B0">zach</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="haoly"
+          leftcolor="#CEAE56"
+          rightcolor="#596937">haoly</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="sat-gen"
+          leftcolor="#CE8956"
+          rightcolor="#2F8EB1">satgen</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="distro-ejs"
+          leftcolor="#261C0D"
+          rightcolor="#859152">distro-ejs</button>
+      </footer>
     </div>
   }
 }

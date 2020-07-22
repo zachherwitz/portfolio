@@ -12,23 +12,68 @@ html, body, #root, .app-container{
 nav {
   height: 7%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-name {
+  box-sizing: border-box;
+  padding-left: 8%;
+  display: flex;
+  align-items: center;
+}
 
+.nav-name h1 {
+  display: none;
+}
+
+.nav-name h2 {
+  display: block;
+}
+
+.nav-personals {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-personals button {
+  display: block;
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 50%;
+}
+
+.nav-personals button:hover {
+  background-color: #e2e2e2;
+}
+
+.nav-personals button:focus {
+  outline: 1px groove black;
+}
+
+.nav-personals i {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0 2px;
+}
+
+.nav-personals i:hover {
+  color: #656565;
+}
+
+.nav-projects {
+  display: none;
 }
 
 .nav-projects button {
-  height: 100%;
-}
-
-.nav-socials {
-  display: flex;
+  display: none;
 }
 
 .content-container {
-  height: 93%;
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -38,6 +83,7 @@ nav {
   padding: 0;
   font-size: 20vw;
   font-weight: 900;
+  letter-spacing: .7rem;
 }
 
 .splash-text-right p {
@@ -45,12 +91,12 @@ nav {
   padding: 0;
   font-size: 20vw;
   font-weight: 900;
+  letter-spacing: .7rem;
 }
 
 .left-container {
   height: 40%;
   width: 100%;
-  background-color: #5300C6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +118,6 @@ nav {
 .right-container {
   height: 40%;
   width: 100%;
-  background-color: teal;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,8 +135,104 @@ nav {
   display: none;
 }
 
+footer {
+  display: flex;
+  height: 13%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer button {
+  height: 90%;
+  background-color: white;
+}
+
 // Desktop //
 @media screen and (min-width: 900px) {
+  nav {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+  }
+
+  .nav-name h1 {
+    display: block;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-name h2 {
+    display: none;
+  }
+
+  .nav-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-projects p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-button-container {
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .nav-projects button {
+    display: block;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 700;
+    margin: 0 2px;
+  }
+
+  .nav-projects button:hover {
+    background-color: #e2e2e2;
+  }
+
+  .nav-projects button:focus {
+    outline: 1px groove black;
+  }
+
+  .nav-personals {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-personals button {
+    display: block;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    height: 50%;
+  }
+
+  .nav-personals button:hover {
+    background-color: #e2e2e2;
+  }
+
+  .nav-personals button:focus {
+    outline: 1px groove black;
+  }
+
+  .nav-personals i {
+    font-size: 2rem;
+    color: black;
+    margin: 0 2px;
+  }
+
+  .nav-personals i:hover {
+    color: #656565;
+  }
+
   .content-container {
     height: 95%;
     display: flex;
@@ -103,6 +244,7 @@ nav {
     padding: 0;
     font-size: 20vw;
     font-weight: 300;
+    letter-spacing: 3rem;
   }
 
   .splash-text-right p {
@@ -110,8 +252,8 @@ nav {
     padding: 0;
     font-size: 20vw;
     font-weight: 300;
+    letter-spacing: 3rem;
   }
-
 
   .left-container {
     height: 100%;
@@ -123,7 +265,6 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #5300C6;
     padding: 0;
   }
 
@@ -148,9 +289,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: teal;
   }
-
 
   .resume-container {
     width: 100%;
@@ -162,5 +301,9 @@ nav {
     max-width: 85%;
     display: block;
     margin: 0 auto;
+  }
+
+  footer {
+    display: none;
   }
 }
