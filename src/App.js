@@ -44,37 +44,51 @@ class App extends React.Component {
   render = () => {
     return <div className="app-container">
       <nav>
-        <button
-          onClick={this.displayRoute}
-          displayroute="zach"
-          leftcolor=""
-          rightcolor="">zach</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="distro"
-          leftcolor=""
-          rightcolor="">distro</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="rootstock"
-          leftcolor=""
-          rightcolor="">rootstock</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="haoly"
-          leftcolor=""
-          rightcolor="">haoly</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="sat-gen"
-          leftcolor=""
-          rightcolor="">satgen</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="distro-ejs"
-          leftcolor=""
-          rightcolor="">distro-ejs</button>
+        <div className="nav-name">
+          <h1>zach herwitz</h1>
+        </div>
+        <div className="nav-projects">
+          <button
+            onClick={this.displayRoute}
+            displayroute="zach"
+            leftcolor=""
+            rightcolor="">zach</button>
+          <button
+            onClick={this.displayRoute}
+            displayroute="distro"
+            leftcolor=""
+            rightcolor="">distro</button>
+          <button
+            onClick={this.displayRoute}
+            displayroute="rootstock"
+            leftcolor=""
+            rightcolor="">rootstock</button>
+          <button
+            onClick={this.displayRoute}
+            displayroute="haoly"
+            leftcolor=""
+            rightcolor="">haoly</button>
+          <button
+            onClick={this.displayRoute}
+            displayroute="sat-gen"
+            leftcolor=""
+            rightcolor="">satgen</button>
+          <button
+            onClick={this.displayRoute}
+            displayroute="distro-ejs"
+            leftcolor=""
+            rightcolor="">distro-ejs</button>
+        </div>
+        <div className="nav-socials">
+          <p>github</p>
+          <p>linkedin</p>
+          <p>medium</p>
+          <p>vettery</p>
+        </div>
+
       </nav>
+
+
       <div className="content-container">
         <div className="left-container">
           {this.state.display === 'splash' ? <div className="splash-text-left">

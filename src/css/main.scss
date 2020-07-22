@@ -12,10 +12,19 @@ html, body, #root, .app-container{
 nav {
   height: 7%;
   display: flex;
+  justify-content: space-around;
 }
 
-nav button {
+.nav-name {
+
+}
+
+.nav-projects button {
   height: 100%;
+}
+
+.nav-socials {
+  display: flex;
 }
 
 .content-container {
