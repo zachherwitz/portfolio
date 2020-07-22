@@ -137,16 +137,16 @@ class App extends React.Component {
           </div> : null}
 
           {this.state.display === 'zach' ? <div>
-            <div>
-              zach herwitz is...
+            <div className="bio-button-container">
               <button onClick={this.showResume}>resume</button>
               <button onClick={this.showBio}>bio</button>
             </div>
             {this.state.showResume ? <a target="_blank" href={ResumePDF} className="resume-container">
               <img className="resume" src={Resume}/>
             </a> :
-            <div>
-              <h1>BIO GOES HERE!</h1>
+            <div className="bio">
+              <h1>zach herwitz is...</h1>
+              <p>a curious, detail oriented developer with an eye for team dynamics and a desire to pop the hood and get my hands dirty. I bring the drive, stamina, and communication skills needed to succeed both in sprints and marathons. As someone who has worked their way up through the film industry and the New York night life scene, I am a self starter that can lead by example, or elevate a team through collaboration!</p>
             </div>}
           </div> : null}
 
@@ -198,11 +198,6 @@ class App extends React.Component {
           displayroute="rootstock"
           leftcolor="#CAA742"
           rightcolor="#6CA39C">rootstock</button>
-        <button
-          onClick={this.displayRoute}
-          displayroute="zach"
-          leftcolor="#BB8378"
-          rightcolor="#4894B0">zach</button>
         <button
           onClick={this.displayRoute}
           displayroute="haoly"

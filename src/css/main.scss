@@ -17,7 +17,7 @@ nav {
 
 .nav-name {
   box-sizing: border-box;
-  padding-left: 8%;
+  padding-left: .5rem;
   display: flex;
   align-items: center;
 }
@@ -28,12 +28,15 @@ nav {
 
 .nav-name h2 {
   display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-personals {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-right: .5rem;
 }
 
 .nav-personals button {
@@ -135,6 +138,27 @@ nav {
   display: none;
 }
 
+.bio-button-container button {
+  display: block;
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 700;
+  margin: 2px;
+}
+
+.bio-button-container button:hover {
+  background-color: #e2e2e2;
+}
+
+.bio-button-container button:focus {
+  outline: 1px groove black;
+}
+
+.bio p {
+  font-size: .8rem;
+}
+
 footer {
   display: flex;
   height: 13%;
@@ -152,6 +176,10 @@ footer button {
   nav {
     display: grid;
     grid-template-columns: 20% 60% 20%;
+  }
+
+  .nav-name {
+    padding-left: 2rem
   }
 
   .nav-name h1 {
@@ -301,6 +329,14 @@ footer button {
     max-width: 85%;
     display: block;
     margin: 0 auto;
+  }
+
+  .bio h1 {
+    font-size: 5rem;
+  }
+
+  .bio p {
+    font-size: 1.5rem;
   }
 
   footer {
