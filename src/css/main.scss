@@ -10,25 +10,18 @@ html, body, #root, .app-container{
 }
 
 nav {
-  height: 5%;
+  height: 7%;
+  display: flex;
+}
+
+nav button {
+  height: 100%;
 }
 
 .content-container {
-  height: 95%;
+  height: 93%;
   display: flex;
   flex-direction: column;
-}
-
-.left-container {
-  height: 40%;
-  width: 80%;
-  margin: 1rem auto;
-  background-color: #5300C6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 .splash-text-left p {
@@ -38,23 +31,6 @@ nav {
   font-weight: 900;
 }
 
-.left-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.right-container {
-  height: 40%;
-  width: 80%;
-  margin: 1rem auto;
-  background-color: teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
 .splash-text-right p {
   margin: 0;
   padding: 0;
@@ -62,7 +38,48 @@ nav {
   font-weight: 900;
 }
 
+.left-container {
+  height: 40%;
+  width: 100%;
+  background-color: #5300C6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5%;
+  box-sizing: border-box;
+}
 
+.left-container a {
+  height: 100%;
+}
+
+.left-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-container {
+  height: 40%;
+  width: 100%;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.resume-container {
+  display: none;
+}
+
+.resume {
+  display: none;
+}
 
 // Desktop //
 @media screen and (min-width: 900px) {
@@ -71,6 +88,21 @@ nav {
     display: flex;
     flex-direction: row;
   }
+
+  .splash-text-left p {
+    margin: 0;
+    padding: 0;
+    font-size: 20vw;
+    font-weight: 300;
+  }
+
+  .splash-text-right p {
+    margin: 0;
+    padding: 0;
+    font-size: 20vw;
+    font-weight: 300;
+  }
+
 
   .left-container {
     height: 100%;
@@ -83,13 +115,13 @@ nav {
     align-items: center;
     color: white;
     background-color: #5300C6;
+    padding: 0;
   }
 
-  .splash-text-left p {
-    margin: 0;
-    padding: 0;
-    font-size: 20vw;
-    font-weight: 300;
+  .left-container a {
+    width: 100%;
+    height: auto;
+    display: flex;
   }
 
   .left-container img {
@@ -110,100 +142,16 @@ nav {
     background-color: teal;
   }
 
-  .splash-text-right p {
-    margin: 0;
-    padding: 0;
-    font-size: 20vw;
-    font-weight: 300;
+
+  .resume-container {
+    width: 100%;
+    height: auto;
+    display: flex;
   }
 
-
+  .resume {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
 }
-
-
-
-
-
-// html, body, #root, .app-container {
-//   height: 100%;
-//   width: 100%;
-//   padding: 0;
-//   margin: 0;
-// }
-//
-//
-// .app-container {
-//   box-sizing: border-box;
-//   // border: 10px solid gold;
-// }
-//
-// header h1 {
-//   text-align: center;
-//   font-size: 23vw;
-// }
-//
-// .display-container {
-//   box-sizing: border-box;
-//   width: 70%;
-//   margin: 2rem auto;
-//   // border: 10px solid red;
-// }
-//
-// .display-container img {
-//   width: 100%;
-//   border: 1px solid black;
-// }
-//
-// .display-conatiner a {
-//   height: 100%;
-//   margin: 0;
-//   padding: 0;
-// }
-//
-// .project-button-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-// }
-//
-// .project-button-container button {
-//   width: 40%;
-//   height: 10vw;
-//   margin: .5rem;
-// }
-//
-// @media screen and (min-width: 1000px) {
-//
-//   .display-container {
-//     display: flex;
-//     box-sizing: border-box;
-//     width: 90%;
-//     margin: 2rem auto;
-//     // border: 10px solid red;
-//   }
-//
-//   .display-container img {
-//     box-sizing: border-box;
-//     width: 50%;
-//     height: 100%;
-//     border: 1px solid black;
-//   }
-//
-//   .project-button-container button {
-//     width: 10%;
-//     // height: 10vw;
-//     margin: .5rem;
-//   }
-//
-//   #zach-pic {
-//     margin: 0 auto;
-//     width: 25%;
-//   }
-//
-//   header h1 {
-//     text-align: center;
-//     font-size: 10vw;
-//     margin: 5rem;
-//   }
-//
-// }

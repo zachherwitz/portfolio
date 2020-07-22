@@ -10,25 +10,18 @@ html, body, #root, .app-container {
 }
 
 nav {
-  height: 5%;
+  height: 7%;
+  display: flex;
+}
+
+nav button {
+  height: 100%;
 }
 
 .content-container {
-  height: 95%;
+  height: 93%;
   display: flex;
   flex-direction: column;
-}
-
-.left-container {
-  height: 40%;
-  width: 80%;
-  margin: 1rem auto;
-  background-color: #5300C6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 .splash-text-left p {
@@ -38,23 +31,6 @@ nav {
   font-weight: 900;
 }
 
-.left-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.right-container {
-  height: 40%;
-  width: 80%;
-  margin: 1rem auto;
-  background-color: teal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
 .splash-text-right p {
   margin: 0;
   padding: 0;
@@ -62,11 +38,68 @@ nav {
   font-weight: 900;
 }
 
+.left-container {
+  height: 40%;
+  width: 100%;
+  background-color: #5300C6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.left-container a {
+  height: 100%;
+}
+
+.left-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-container {
+  height: 40%;
+  width: 100%;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.resume-container {
+  display: none;
+}
+
+.resume {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   .content-container {
     height: 95%;
     display: flex;
     flex-direction: row;
+  }
+
+  .splash-text-left p {
+    margin: 0;
+    padding: 0;
+    font-size: 20vw;
+    font-weight: 300;
+  }
+
+  .splash-text-right p {
+    margin: 0;
+    padding: 0;
+    font-size: 20vw;
+    font-weight: 300;
   }
 
   .left-container {
@@ -80,13 +113,13 @@ nav {
     align-items: center;
     color: white;
     background-color: #5300C6;
+    padding: 0;
   }
 
-  .splash-text-left p {
-    margin: 0;
-    padding: 0;
-    font-size: 20vw;
-    font-weight: 300;
+  .left-container a {
+    width: 100%;
+    height: auto;
+    display: flex;
   }
 
   .left-container img {
@@ -107,11 +140,16 @@ nav {
     background-color: teal;
   }
 
-  .splash-text-right p {
-    margin: 0;
-    padding: 0;
-    font-size: 20vw;
-    font-weight: 300;
+  .resume-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .resume {
+    max-width: 85%;
+    display: block;
+    margin: 0 auto;
   }
 }
 

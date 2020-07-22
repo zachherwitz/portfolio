@@ -3,6 +3,8 @@ import React from 'react';
 import Distro from './images/distro.png';
 import DistroEJS from './images/distro-ejs.png';
 import HAOly from './images/haoly.png';
+import Resume from './images/resume.jpg'
+import ResumePDF from './images/resume.pdf'
 import RootStock from './images/rootstock.png';
 import SATGen from './images/sat-gen.png';
 import Zach from './images/zach.png';
@@ -12,34 +14,77 @@ import ProjectDescription from './components/ProjectDescription'
 
 class App extends React.Component {
   state = {
-    display: 'splash'
+    display: 'splash',
+    showResume: false
   }
 
   displayRoute = (e) => {
     let routeToDisplay = e.target.getAttribute('displayroute');
+    let leftColor = e.target.getAttribute('leftcolor');
+    let rightColor = e.target.getAttribute('rightcolor');
     this.setState({
       display:routeToDisplay,
+      leftColor: leftColor,
+      rightColor: rightColor
+    })
+  }
+
+  showBio = () => {
+    this.setState({
+      showResume: false
+    })
+  }
+
+  showResume = () => {
+    this.setState({
+      showResume: true
     })
   }
 
   render = () => {
     return <div className="app-container">
       <nav>
-        <button onClick={this.displayRoute} displayroute="zach">bio</button>
-        <button onClick={this.displayRoute} displayroute="distro">distro</button>
-        <button onClick={this.displayRoute} displayroute="rootstock">rootstock</button>
-        <button onClick={this.displayRoute} displayroute="haoly">haoly</button>
-        <button onClick={this.displayRoute} displayroute="sat-gen">satgen</button>
-        <button onClick={this.displayRoute} displayroute="distro-ejs">distro-ejs</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="zach"
+          leftcolor=""
+          rightcolor="">zach</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="distro"
+          leftcolor=""
+          rightcolor="">distro</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="rootstock"
+          leftcolor=""
+          rightcolor="">rootstock</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="haoly"
+          leftcolor=""
+          rightcolor="">haoly</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="sat-gen"
+          leftcolor=""
+          rightcolor="">satgen</button>
+        <button
+          onClick={this.displayRoute}
+          displayroute="distro-ejs"
+          leftcolor=""
+          rightcolor="">distro-ejs</button>
       </nav>
       <div className="content-container">
         <div className="left-container">
           {this.state.display === 'splash' ? <div className="splash-text-left">
             <p>za</p>
-
           </div> : null}
 
-          {this.state.display === 'zach' ? <img alt="zach herwitz" id="zach-pic" src={Zach}/> : null}
+          {this.state.display === 'zach' ?
+            <a target="_blank" href="https://www.linkedin.com/in/zach-herwitz/">
+              <img alt="zach herwitz" id="zach-pic" src={Zach}/>
+            </a> : null}
 
           {this.state.display === 'distro' ?
             <a target="_blank" href="https://distro-app.herokuapp.com/">
@@ -69,15 +114,21 @@ class App extends React.Component {
 
         <div className="right-container">
           {this.state.display === 'splash' ? <div className="splash-text-right">
-            
             <p>ch</p>
           </div> : null}
 
           {this.state.display === 'zach' ? <div>
-            <h1>zach herwitz is...</h1>
-            <p>Bio</p>
-            <iframe/>
-            <button></button>
+            <div>
+              zach herwitz is...
+              <button onClick={this.showResume}>resume</button>
+              <button onClick={this.showBio}>bio</button>
+            </div>
+            {this.state.showResume ? <a target="_blank" href={ResumePDF} className="resume-container">
+              <img className="resume" src={Resume}/>
+            </a> :
+            <div>
+              <h1>BIO GOES HERE!</h1>
+            </div>}
           </div> : null}
 
           {this.state.display === 'distro' ?
