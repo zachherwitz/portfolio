@@ -155,35 +155,40 @@ class App extends React.Component {
               <ProjectDescription
                 name="d|STRO"
                 technologies="mongoDB // Mongoose // Express // React"
-                projectLink="https://distro-app.herokuapp.com/"
+                liveLink="https://distro-app.herokuapp.com/"
+                gitHubLink="https://github.com/zachherwitz/Distro-Front"
                 projectInfo="A film-facing team management and distribution app."/> : null}
 
             {this.state.display === 'sat-gen' ?
               <ProjectDescription
                 name="SAT Question Generator"
                 technologies="PostgreSQL // PHP // React "
-                projectLink="https://enigmatic-escarpment-97432.herokuapp.com/"
+                liveLink="https://enigmatic-escarpment-97432.herokuapp.com/"
+                gitHubLink="https://github.com/zachherwitz/sat-question-generator"
                 projectInfo="Full CRUD on a question database and generator for quick SAT prep"/> : null}
 
             {this.state.display === 'rootstock' ?
               <ProjectDescription
                 name="RootStock"
                 technologies="mongoDB // Mongoose // Express // AngularJS"
-                projectLink="http://rootstock.herokuapp.com/"
-                projectInfo="Financial portfolio manager with comprehensive charts and live stock updates"/>: null}
+                liveLink="http://rootstock.herokuapp.com/"
+                gitHubLink="https://github.com/zachherwitz/RootStock"
+                projectInfo="Financial portfolio manager with comprehensive charts and live stock updates. Created with John Sweriduk and Adlan Yandarbiev"/>: null}
 
             {this.state.display === 'distro-ejs' ?
               <ProjectDescription
                 name="Distro EJS"
                 technologies="mongoDB // Mongoose // Express // EJS"
-                projectLink="https://distro-filmtv.herokuapp.com/"
+                liveLink="https://distro-filmtv.herokuapp.com/"
+                gitHubLink="https://github.com/zachherwitz/unit2project"
                 projectInfo="A campy and user-friendly contact management app."/>: null}
 
             {this.state.display === 'haoly' ?
               <ProjectDescription
                 name="Hao.ly"
                 technologies="JavaScript / jQuery"
-                projectLink="https://zachherwitz.github.io/chineseapp/"
+                liveLink="https://zachherwitz.github.io/chineseapp/"
+                gitHubLink="https://github.com/zachherwitz/zachherwitz.github.io/tree/master/chineseapp"
                 projectInfo="A simple and meditative Chiense dictionary with built-in flashcards"/> : null}
           </div>
         </Slide>
