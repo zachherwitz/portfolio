@@ -165,7 +165,7 @@ class App extends React.Component {
                 technologies="PostgreSQL // PHP // React "
                 liveLink="https://enigmatic-escarpment-97432.herokuapp.com/"
                 gitHubLink="https://github.com/zachherwitz/sat-question-generator"
-                projectInfo="Full CRUD on a question database and generator for quick SAT prep"/> : null}
+                projectInfo="Full CRUD on a question database and generator for quick SAT prep. Created with Hannah Livnat."/> : null}
 
             {this.state.display === 'rootstock' ?
               <ProjectDescription
