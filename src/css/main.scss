@@ -1,0 +1,61 @@
+// MIXINS
+@mixin zeropaddingmargin {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin hundredeverything {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body,
+#root,
+.App {
+  @include zeropaddingmargin;
+  @include hundredeverything;
+}
+
+// LAPTOP WIDTH
+
+@media screen and (min-width: 900px) {
+  nav {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    .title {
+      @include zeropaddingmargin;
+      h1 {
+        @include zeropaddingmargin;
+      }
+      h2 {
+        @include zeropaddingmargin;
+      }
+    }
+    .projects {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      @include zeropaddingmargin;
+      li {
+        list-style: none;
+        margin: 1rem;
+      }
+    }
+  }
+  .home {
+  }
+  .about {
+  }
+  .project-display {
+    .project {
+      color: white;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      img {
+        width: 860px;
+      }
+    }
+  }
+}
