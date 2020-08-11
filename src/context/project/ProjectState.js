@@ -10,6 +10,7 @@ import DistroImage from "../../images/distro.png";
 import RootstockImage from "../../images/rootstock.png";
 import HaoliImage from "../../images/haoli.png";
 import IllustratedGuideImage from "../../images/illustrated-guide.jpg";
+import ZachTestImg from "../../images/zach.png";
 
 const ProjectState = (props) => {
   const initialState = {
@@ -28,7 +29,7 @@ const ProjectState = (props) => {
         leftColor: "#332f2f",
         rightColor: "#E5B455",
         buttonName: "distro",
-        image: DistroImage,
+        images: [DistroImage, ZachTestImg],
       },
       {
         name: "RootStock",
@@ -43,7 +44,7 @@ const ProjectState = (props) => {
         leftColor: "#CAA742",
         rightColor: "#6CA39C",
         buttonName: "rootstock",
-        image: RootstockImage,
+        images: [RootstockImage, ZachTestImg],
       },
       {
         name: "Hao.li",
@@ -58,7 +59,7 @@ const ProjectState = (props) => {
         leftColor: "#CEAE56",
         rightColor: "#596937",
         buttonName: "chinese dict",
-        image: HaoliImage,
+        images: [HaoliImage, ZachTestImg],
       },
       {
         name: "An Illustrated Guide to Black-Owned Bars",
@@ -73,7 +74,7 @@ const ProjectState = (props) => {
         leftColor: "#2F8EB1",
         rightColor: "#CE8956",
         buttonName: "illustrated map",
-        image: IllustratedGuideImage,
+        images: [IllustratedGuideImage, ZachTestImg],
       },
     ],
   };
