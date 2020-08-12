@@ -32,37 +32,267 @@ body,
   @include hundredeverything;
 }
 
+// MOBILE WIDTH
+.App {
+  display: grid;
+  grid-template-rows: 8% 1fr;
+}
+
+.home {
+  @include zeropaddingmargin;
+  @include halfnhalf;
+  color: white;
+  font-size: 20vw;
+  font-weight: 300;
+  letter-spacing: 3rem;
+  .left {
+    @include hundredeverything;
+    background: #4894b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 1500ms !important;
+  }
+  .right {
+    @include hundredeverything;
+    background: #446e92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 1500ms !important;
+  }
+}
+
+.about {
+  @include zeropaddingmargin;
+  @include halfnhalf;
+  .left {
+    @include hundredeverything;
+    background: #bb8378;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90%;
+    }
+  }
+  .right {
+    @include hundredeverything;
+    background: #59a4c0;
+    color: white;
+    .bio {
+      h1 {
+        @include zeropaddingmargin;
+        box-sizing: border-box;
+        margin: 3rem auto 0 auto;
+        padding: 0.5rem;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        text-align: center;
+      }
+      .contact-link-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        a {
+          @include zeropaddingmargin;
+          padding: 1rem;
+          background: white;
+          border-radius: 5px;
+          color: #59a4c0;
+          font-size: 1rem;
+          width: 25%;
+          text-align: center;
+        }
+      }
+    }
+
+    .medals {
+      box-sizing: border-box;
+      padding: 2rem;
+      .medal-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .medal {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 1rem;
+
+          i {
+            font-size: 3vw;
+          }
+          p {
+            font-size: 0.8vw;
+            margin-top: 5px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .bio-carousel {
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    .carousel-indicators {
+      display: none;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+  }
+}
+
+.project-display {
+  grid-row: 2 / 3;
+  .project {
+    color: white;
+    height: 100%;
+    @include halfnhalf;
+    .img-carousel {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+  .project-info-container {
+    display: flex;
+    align-items: center;
+    .project-info {
+      padding: 5rem;
+      h1 {
+        @include zeropaddingmargin;
+        font-weight: 900;
+        text-align: center;
+        font-size: 4rem;
+      }
+      hr {
+        width: 70%;
+        background: white;
+      }
+
+      h3 {
+        font-weight: 300;
+      }
+      h4 {
+        display: inline-block;
+        margin: 1rem;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
 // LAPTOP WIDTH
 
 @media screen and (min-width: 900px) {
   .App {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 8% 1fr;
   }
 
   nav {
-    @include borderbubble;
+    // border: 2px solid black;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 30% 1fr 30%;
     .title {
       @include zeropaddingmargin;
+      padding: 0.5rem 1rem 0 1rem;
+
+      a:hover {
+        text-decoration: none;
+      }
       h1 {
         @include zeropaddingmargin;
+        font-size: 3vh;
+        font-weight: 900;
+        color: black;
+        i {
+          color: #446e92;
+        }
+        &:hover {
+          text-decoration: underline;
+          a {
+            text-decoration: none;
+          }
+          span {
+            opacity: 1;
+          }
+        }
       }
       h2 {
         @include zeropaddingmargin;
+        font-size: 2vh;
+      }
+      span {
+        opacity: 0;
       }
     }
     .projects {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       @include zeropaddingmargin;
-      li {
-        list-style: none;
-        margin: 1rem;
+      h4 {
+        @include zeropaddingmargin;
+        font-size: 2vh;
+      }
+      .project-link-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @include zeropaddingmargin;
+        li {
+          @include zeropaddingmargin;
+          list-style: none;
+          margin: 0 1vw;
+          color: black;
+          font-size: 1.5vh;
+        }
+        .project-button {
+          color: black;
+          font-weight: 900;
+        }
+      }
+    }
+    .contacts-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 1vw;
+      .about-me-link {
+        @include borderbubble;
+        color: white;
+        background: black;
+        font-size: 1.1vh;
+        font-weight: 900;
+        padding: 6px 2px;
+        margin-right: 10px;
+      }
+      i {
+        background: white;
+        color: black;
+        font-size: 4vh;
+        margin: 0 0.4rem;
       }
     }
   }
@@ -158,7 +388,7 @@ body,
             margin: 1rem;
 
             i {
-              font-size: 5vw;
+              font-size: 3vw;
             }
             p {
               font-size: 0.8vw;
@@ -188,11 +418,43 @@ body,
   }
 
   .project-display {
-    @include borderbubble();
     grid-row: 2 / 3;
     .project {
       color: white;
+      height: 100%;
       @include halfnhalf;
+      .img-carousel {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+      }
+    }
+    .project-info-container {
+      display: flex;
+      align-items: center;
+      .project-info {
+        padding: 5rem;
+        h1 {
+          @include zeropaddingmargin;
+          font-weight: 900;
+          text-align: center;
+          font-size: 4rem;
+        }
+        hr {
+          width: 70%;
+          background: white;
+        }
+
+        h3 {
+          font-weight: 300;
+        }
+        h4 {
+          display: inline-block;
+          margin: 1rem;
+          font-weight: 900;
+        }
+      }
     }
   }
 }

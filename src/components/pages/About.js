@@ -22,17 +22,17 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item className="bio-item">
               <h3>
-                a curious, collaborative, and detail oriented developer with a
-                desire to pop the hood and get my hands dirty
+                a collaborative and detail oriented developer with a desire to
+                pop the hood and get his hands dirty
+              </h3>
+            </Carousel.Item>
+            <Carousel.Item className="bio-item">
+              <h3>
+                a writer and producer interested in the gamification of
+                advertising and new media
               </h3>
             </Carousel.Item>
           </Carousel>
-        </div>
-        <div className="contact">
-          <div className="contact-link-container">
-            <a href={Resume}>Download Resume!</a>
-            <a href="mailto:zachherwitz@gmail.com">Get in Touch!</a>
-          </div>
         </div>
         <div className="medals">
           <div className="medal-container">
@@ -96,6 +96,12 @@ const About = () => {
               <i className="devicon-python-plain"></i>
               <p>python</p>
             </div>
+          </div>
+        </div>
+        <div className="contact">
+          <div className="contact-link-container">
+            <a href={Resume}>Download Resume!</a>
+            <a href="mailto:zachherwitz@gmail.com">Get in Touch!</a>
           </div>
         </div>
       </div>

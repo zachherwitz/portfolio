@@ -12,33 +12,239 @@ body,
   height: 100%;
 }
 
+.App {
+  display: grid;
+  grid-template-rows: 8% 1fr;
+}
+
+.home {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: white;
+  font-size: 20vw;
+  font-weight: 300;
+  letter-spacing: 3rem;
+}
+.home .left {
+  width: 100%;
+  height: 100%;
+  background: #4894b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1500ms !important;
+}
+.home .right {
+  width: 100%;
+  height: 100%;
+  background: #446e92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1500ms !important;
+}
+
+.about {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.about .left {
+  width: 100%;
+  height: 100%;
+  background: #bb8378;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .left img {
+  width: 90%;
+}
+.about .right {
+  width: 100%;
+  height: 100%;
+  background: #59a4c0;
+  color: white;
+}
+.about .right .bio h1 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 3rem auto 0 auto;
+  padding: 0.5rem;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+.about .right .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about .right .contact h1 {
+  text-align: center;
+}
+.about .right .contact .contact-link-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.about .right .contact .contact-link-container a {
+  padding: 0;
+  margin: 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  color: #59a4c0;
+  font-size: 1rem;
+  width: 25%;
+  text-align: center;
+}
+.about .right .medals {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+.about .right .medals .medal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .right .medals .medal-container .medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.about .right .medals .medal-container .medal i {
+  font-size: 3vw;
+}
+.about .right .medals .medal-container .medal p {
+  font-size: 0.8vw;
+  margin-top: 5px;
+  color: white;
+}
+.about .bio-carousel {
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 10vh;
+  margin: 0 auto;
+}
+.about .bio-carousel .carousel-indicators {
+  display: none;
+}
+.about .bio-carousel .carousel-control-prev,
+.about .bio-carousel .carousel-control-next {
+  display: none;
+}
+
+.project-display {
+  grid-row: 2/3;
+}
+.project-display .project {
+  color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.project-display .project .img-carousel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.project-display .project-info-container {
+  display: flex;
+  align-items: center;
+}
+.project-display .project-info-container .project-info {
+  padding: 5rem;
+}
+.project-display .project-info-container .project-info h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  text-align: center;
+  font-size: 4rem;
+}
+.project-display .project-info-container .project-info hr {
+  width: 70%;
+  background: white;
+}
+.project-display .project-info-container .project-info h3 {
+  font-weight: 300;
+}
+.project-display .project-info-container .project-info h4 {
+  display: inline-block;
+  margin: 1rem;
+  font-weight: 900;
+}
+
 @media screen and (min-width: 900px) {
   .App {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 8% 1fr;
   }
 
   nav {
-    border: 3px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 30% 1fr 30%;
   }
   nav .title {
     padding: 0;
     margin: 0;
+    padding: 0.5rem 1rem 0 1rem;
+  }
+  nav .title a:hover {
+    text-decoration: none;
   }
   nav .title h1 {
     padding: 0;
     margin: 0;
+    font-size: 3vh;
+    font-weight: 900;
+    color: black;
+  }
+  nav .title h1 i {
+    color: #446e92;
+  }
+  nav .title h1:hover {
+    text-decoration: underline;
+  }
+  nav .title h1:hover a {
+    text-decoration: none;
+  }
+  nav .title h1:hover span {
+    opacity: 1;
   }
   nav .title h2 {
     padding: 0;
     margin: 0;
+    font-size: 2vh;
+  }
+  nav .title span {
+    opacity: 0;
   }
   nav .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav .projects h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 2vh;
+  }
+  nav .projects .project-link-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,9 +252,40 @@ body,
     padding: 0;
     margin: 0;
   }
-  nav .projects li {
+  nav .projects .project-link-container li {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    margin: 1rem;
+    margin: 0 1vw;
+    color: black;
+    font-size: 1.5vh;
+  }
+  nav .projects .project-link-container .project-button {
+    color: black;
+    font-weight: 900;
+  }
+  nav .contacts-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1vw;
+  }
+  nav .contacts-container .about-me-link {
+    border: 3px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    background: black;
+    font-size: 1.1vh;
+    font-weight: 900;
+    padding: 6px 2px;
+    margin-right: 10px;
+  }
+  nav .contacts-container i {
+    background: white;
+    color: black;
+    font-size: 4vh;
+    margin: 0 0.4rem;
   }
 
   .home {
@@ -153,7 +390,7 @@ body,
     margin: 1rem;
   }
   .about .right .medals .medal-container .medal i {
-    font-size: 5vw;
+    font-size: 3vw;
   }
   .about .right .medals .medal-container .medal p {
     font-size: 0.8vw;
@@ -178,15 +415,45 @@ body,
   }
 
   .project-display {
-    border: 3px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
     grid-row: 2/3;
   }
   .project-display .project {
     color: white;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  .project-display .project .img-carousel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  .project-display .project-info-container {
+    display: flex;
+    align-items: center;
+  }
+  .project-display .project-info-container .project-info {
+    padding: 5rem;
+  }
+  .project-display .project-info-container .project-info h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .project-display .project-info-container .project-info hr {
+    width: 70%;
+    background: white;
+  }
+  .project-display .project-info-container .project-info h3 {
+    font-weight: 300;
+  }
+  .project-display .project-info-container .project-info h4 {
+    display: inline-block;
+    margin: 1rem;
+    font-weight: 900;
   }
 }
 
