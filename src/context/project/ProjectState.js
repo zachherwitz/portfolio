@@ -7,12 +7,12 @@ import { SELECT_PROJECT } from "../types";
 
 // Images
 // ROOTSTOCK
-import RootstockImage1 from "../../images/rootstock/rootstock1.png";
-import RootstockImage2 from "../../images/rootstock/rootstock2.png";
-import RootstockImage3 from "../../images/rootstock/rootstock3.png";
-import RootstockImage4 from "../../images/rootstock/rootstock4.png";
-import RootstockImage5 from "../../images/rootstock/rootstock5.png";
-import RootstockImage6 from "../../images/rootstock/rootstock6.png";
+import RootstockImage1 from "../../images/rootstock/rootstock1.jpg";
+import RootstockImage2 from "../../images/rootstock/rootstock2.jpg";
+import RootstockImage3 from "../../images/rootstock/rootstock3.jpg";
+import RootstockImage4 from "../../images/rootstock/rootstock4.jpg";
+import RootstockImage5 from "../../images/rootstock/rootstock5.jpg";
+import RootstockImage6 from "../../images/rootstock/rootstock6.jpg";
 
 // HAOLI
 import HaoliImage1 from "../../images/haoli/haoli1.jpg";
@@ -21,20 +21,20 @@ import HaoliImage3 from "../../images/haoli/haoli3.jpg";
 import HaoliImage4 from "../../images/haoli/haoli4.jpg";
 
 // DISTRO
-import DistroImage1 from "../../images/distro/distro1.png";
-import DistroImage2 from "../../images/distro/distro2.png";
-import DistroImage3 from "../../images/distro/distro3.png";
-import DistroImage4 from "../../images/distro/distro4.png";
-import DistroImage5 from "../../images/distro/distro5.png";
-import DistroImage6 from "../../images/distro/distro6.png";
-import DistroImage7 from "../../images/distro/distro7.png";
-import DistroImage8 from "../../images/distro/distro8.png";
+import DistroImage1 from "../../images/distro/distro1.jpg";
+import DistroImage2 from "../../images/distro/distro2.jpg";
+import DistroImage3 from "../../images/distro/distro3.jpg";
+import DistroImage4 from "../../images/distro/distro4.jpg";
+import DistroImage5 from "../../images/distro/distro5.jpg";
+import DistroImage6 from "../../images/distro/distro6.jpg";
+import DistroImage7 from "../../images/distro/distro7.jpg";
+import DistroImage8 from "../../images/distro/distro8.jpg";
 
 // ILLUSTRATED GUIDE
-import IllustratedGuideImage1 from "../../images/illustrated-guide/illustrated-guide1.png";
-import IllustratedGuideImage2 from "../../images/illustrated-guide/illustrated-guide2.png";
-import IllustratedGuideImage3 from "../../images/illustrated-guide/illustrated-guide3.png";
-import IllustratedGuideImage4 from "../../images/illustrated-guide/illustrated-guide4.png";
+import IllustratedGuideImage1 from "../../images/illustrated-guide/illustrated-guide1.jpg";
+import IllustratedGuideImage2 from "../../images/illustrated-guide/illustrated-guide2.jpg";
+import IllustratedGuideImage3 from "../../images/illustrated-guide/illustrated-guide3.jpg";
+import IllustratedGuideImage4 from "../../images/illustrated-guide/illustrated-guide4.jpg";
 
 import ZachTestImg from "../../images/zach.png";
 
