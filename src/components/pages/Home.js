@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import ProjectContext from "../../context/project/projectContext";
 
 import Slide from "react-reveal/Slide";
 
@@ -7,6 +8,9 @@ import ZachImage from "../../images/zach.png";
 const Home = () => {
   const [flipLeft, setFlipLeft] = useState(false);
   const [flipRight, setFlipRight] = useState(false);
+  const projectContext = useContext(ProjectContext);
+
+  const { allImages } = projectContext;
 
   const onClick = (e) => {
     // disabled for now
@@ -18,6 +22,10 @@ const Home = () => {
 
   return (
     <div className="home">
+      {allImages &&
+        allImages.map((src) => {
+          return <img style={{ display: "none" }} src={src} />;
+        })}
       <Slide left>
         <div className="left" half="left">
           {flipLeft ? (

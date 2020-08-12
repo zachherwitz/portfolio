@@ -40,6 +40,31 @@ import ZachTestImg from "../../images/zach.png";
 
 const ProjectState = (props) => {
   const initialState = {
+    allImages: [
+      DistroImage1,
+      DistroImage2,
+      DistroImage3,
+      DistroImage4,
+      DistroImage5,
+      DistroImage6,
+      DistroImage7,
+      DistroImage8,
+      IllustratedGuideImage1,
+      IllustratedGuideImage2,
+      IllustratedGuideImage3,
+      IllustratedGuideImage4,
+      RootstockImage1,
+      RootstockImage2,
+      RootstockImage3,
+      RootstockImage4,
+      RootstockImage5,
+      RootstockImage6,
+      HaoliImage1,
+      HaoliImage2,
+      HaoliImage3,
+      HaoliImage4,
+      ZachTestImg,
+    ],
     project: {
       name: "d|STRO",
       subtitle: "Film Distribution and Contact Management App",
@@ -159,6 +184,7 @@ const ProjectState = (props) => {
   return (
     <ProjectContext.Provider
       value={{
+        allImages: state.allImages,
         project: state.project,
         projects: state.projects,
         selectProject,
