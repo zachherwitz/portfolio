@@ -15,10 +15,10 @@ import RootstockImage5 from "../../images/rootstock/rootstock5.png";
 import RootstockImage6 from "../../images/rootstock/rootstock6.png";
 
 // HAOLI
-import HaoliImage1 from "../../images/haoli/haoli1.png";
-import HaoliImage2 from "../../images/haoli/haoli2.png";
-import HaoliImage3 from "../../images/haoli/haoli3.png";
-import HaoliImage4 from "../../images/haoli/haoli4.png";
+import HaoliImage1 from "../../images/haoli/haoli1.jpg";
+import HaoliImage2 from "../../images/haoli/haoli2.jpg";
+import HaoliImage3 from "../../images/haoli/haoli3.jpg";
+import HaoliImage4 from "../../images/haoli/haoli4.jpg";
 
 // DISTRO
 import DistroImage1 from "../../images/distro/distro1.png";
