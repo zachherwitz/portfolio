@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Context
@@ -7,6 +7,7 @@ import ProjectState from "./context/project/ProjectState";
 // Subcomponents
 import Navbar from "./components/layout/Navbar";
 import ProjectDisplay from "./components/layout/ProjectDisplay";
+import Footer from "./components/layout/Footer";
 
 // Pages
 import Home from "./components/pages/Home";
@@ -24,6 +25,7 @@ const App = () => {
             <Route exact path="/about" component={About} />
             <Route path="/*" component={Home} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     </ProjectState>

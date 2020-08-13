@@ -21,7 +21,7 @@ const ProjectDisplay = () => {
                     <img
                       className="d-block w-100"
                       src={project.images[index]}
-                      alt="image"
+                      alt={project.name}
                     />
                   </Carousel.Item>
                 );
@@ -38,12 +38,20 @@ const ProjectDisplay = () => {
               {project.subtitle && <h2>{project.subtitle}</h2>}
               <h3>{project.tech}</h3>
               <h4>
-                <a target="_blank" href={project.liveLink}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.liveLink}
+                >
                   Live Link
                 </a>
               </h4>
               <h4>
-                <a target="_blank" href={project.githubLink}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.githubLink}
+                >
                   GitHub Repo
                 </a>
               </h4>

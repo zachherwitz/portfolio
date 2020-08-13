@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="left">
-        <img src={Zach} />
+        <img src={Zach} alt="Zach Herwitz" />
       </div>
       <div className="right">
         <div className="bio">
@@ -33,6 +33,12 @@ const About = () => {
               </h3>
             </Carousel.Item>
           </Carousel>
+        </div>
+        <div className="contact-mobile">
+          <div className="contact-link-container-mobile">
+            <a href={Resume}>Download Resume!</a>
+            <a href="mailto:zachherwitz@gmail.com">Get in Touch!</a>
+          </div>
         </div>
         <div className="medals">
           <div className="medal-container">
