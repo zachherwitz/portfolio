@@ -94,7 +94,7 @@ const ProjectState = (props) => {
         name: "An Illustrated Guide to Black-Owned Bars",
         subtitle: "",
         tech: "ReactJS / Hooks / ContextAPI / Google Maps API",
-        liveLink: "https://zachherwitz.github.io/chineseapp/",
+        liveLink: "https://blackownedbarsillustrated.netlify.app/",
         githubLink:
           "https://github.com/zachherwitz/zachherwitz.github.io/tree/master/chineseapp",
         projectBlurbs: [
